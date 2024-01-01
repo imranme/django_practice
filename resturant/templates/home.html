@@ -1,7 +1,20 @@
-{% extends "base.html" %} {% block content %}
-<main>
+{% extends "base.html" %}
+{% load static %}
 
-    <h1>Welcome to Our <span class='resturant_name'>cafay ero</span></h1>
-    
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<main >
+    <div class="row">
+        <div class="col-6 mx-auto">
+          <h1 class="text-center">Welcome to Our <span class='resturant_name'>cafay ero</span></h1>
+          <h2 class="text-center">We're delighted to have you here. Enjoy our delicious offerings and cozy ambiance!</h2>
+        </div>
+        <div class="col-6 ">
+          <img class=" w-100" src="{% static 'CSS/cafay_home.jpeg' %}" alt="#" />
+        </div>
+      </div>
 </main>
-{% endblock content %}
+{% endblock %}
+
+
